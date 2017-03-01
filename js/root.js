@@ -12,6 +12,7 @@ define(["jquery","underscore","backbone","text"],function($,_,backbone){
 			require(["text!../home/index.html","../home/home"],function(tpl,ctrl){
 				$(".switch").html(tpl);
 				ctrl.requst();
+				ctrl.shoppingList();
 			});
 			
 		},
@@ -21,8 +22,9 @@ define(["jquery","underscore","backbone","text"],function($,_,backbone){
 			});
 		},
 		order:function(){
-			require(["text!../order/order.html"],function(tpl){
+			require(["text!../order/order.html","../order/order"],function(tpl,ctrl){
 				$(".switch").html(tpl);
+				ctrl.requst();
 			});
 		},
 		shoppingCar:function(){
@@ -45,8 +47,14 @@ define(["jquery","underscore","backbone","text"],function($,_,backbone){
 		}
 	});
 	var router = new w();
-	router.on("route",function(a,b){
-		console.log(a,b);
+	router.on("route",function(a){
+		console.log(a);
+		$(".publicA1 img").attr("src","image/home1.png");
+		$(".publicA2 img").attr("src","image/superDistribution1.png");
+		$(".publicA3 img").attr("src","image/order1.png");
+		$(".publicA4 img").attr("src","image/shoppingCar1.png");
+		$(".publicA5 img").attr("src","image/mine1.png");
+		$("."+a+" img").attr("src","image/"+a+".png");
 	});
 	backbone.history.start();
 })

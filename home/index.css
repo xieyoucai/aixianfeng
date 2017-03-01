@@ -124,8 +124,9 @@
 .content5{
 	display: flex;
 	flex-direction: column;
-	height: 9.90625rem;
+	/*height: 9.90625rem;*/
 	padding-bottom: 0.34375rem;
+	background: #FFFFFF;
 }
 .content5Li1{
 	height: 1.25rem;
@@ -169,6 +170,7 @@
 /*第三列小模快*/
 .content5Li3{
 	display: flex;
+	flex-wrap: wrap;
 	margin-top: 0.1875rem;
 }
 .content5Li3box1{
@@ -176,6 +178,7 @@
 	flex-direction: column;
 	border-right:2px solid #E0E0E0;
 	position: relative;
+	width: 33%;
 }
 .content5Li3box3{
 	border: none;
@@ -205,16 +208,24 @@
 }
 .shoppingType1,.shoppingType2{
 	height: 0.4375rem;
+	width: 0.875rem;
 	border: 2px solid #FF0000;
 	border-radius: 5px;
 	text-align: center;
 	color: #FF0000;
 	font-size:0.3125rem;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .shoppingType2{
+	width: 1.5rem;
 	background: #FF0000;
 	font-size: 0.28125rem;
 	color: #FFFFFF;
+}
+.pm_desc0,.pm_info0{
+	display: none;
 }
 .shoppingKg{
 	font-size: 0.28125rem;

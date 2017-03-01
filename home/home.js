@@ -21,6 +21,37 @@ define(["jquery", "swiper"], function($, swiper) {
 				swipe();
 			});
 	}
+	obj.shoppingList = function(){
+		$.get("http://h5.yztctech.net/api/axf/apihomehot.php",
+		function(req){
+			var data = JSON.parse(req).data;
+			var html = '';
+			for(var m of data){
+				html += `
+						<div class="content5Li3box1">
+					<div>
+						<img src="${m.img}" />
+					</div>
+					<div>
+						<p class="shoppingName">${m.name}</p>
+						<p class="shoppingType">
+							<span class="shoppingType1 pm_desc${m.pm_desc.length}">${m.pm_desc}</span>
+							<span class="shoppingType2 pm_info${m.pm_info.length}">${m.pm_info}</span>
+						</p>
+						<p class="shoppingKg">${m.specifics}</p>
+						<p class="shoppingPrice">
+							<span class="shoppingPriceNow">${m.price}</span>
+							<span class="shoppingPriceOld">${m.market_price}</span>
+						</p>
+					</div>
+					<div class="addShopping"><span></span></div>
+				</div>
+				`;
+			}
+			$(".content5Li3").html(html);
+			
+		});
+	}
 
 	function swipe() {
 		var mySwiper = new Swiper(".swiper-container", {
