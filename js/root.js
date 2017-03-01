@@ -9,8 +9,9 @@ define(["jquery","underscore","backbone","text"],function($,_,backbone){
 			'*defAction':"defAction"
 		},
 		home:function(){
-			require(["text!../home/index.html"],function(tpl){
+			require(["text!../home/index.html","../home/home"],function(tpl,ctrl){
 				$(".switch").html(tpl);
+				ctrl.requst();
 			});
 			
 		},

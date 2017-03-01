@@ -59,6 +59,9 @@
 	/*height: 12.75rem;*/
 }
 /*轮播图样式*/
+.swiper-container img{
+	width: 10rem;
+}
 .contentMargin{
 	margin-bottom: 0.3125rem;
 	background: #fff;	

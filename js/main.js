@@ -4,6 +4,7 @@ require.config({
 		"root":"root",
 		"backbone":"lib/backbone.min",
 		"underscore":"lib/underscore.min",
+		"swiper":"lib/swiper-3.3.1.min",
 		"text":"lib/text",
 		"flexible":"lib/flexible"
 	}
