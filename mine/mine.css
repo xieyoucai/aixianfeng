@@ -1,0 +1,178 @@
+
+.x-containermine header{
+	height: 4.21875rem;
+	background: #FFD600;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.28125rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	
+}
+/*滚动条设置*/
+.contentBottom{
+	position: absolute;
+	top: 4.21875rem;
+	left: 0;
+	right: 0;
+	overflow: auto;
+	bottom: 1.5625rem;
+}
+/*会员注册部分*/
+.headTop{
+	height: 3.15625rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 0.5rem;
+}
+.headLeftTop{
+	display: flex;
+}
+.headLeftTop>img{
+	width: 1.8125rem;
+}
+.registerBox{
+	display: flex;
+	flex-direction: column;
+	margin-left: 0.46875rem;
+}
+.telNum{
+	color: #FFFFFF;
+	font-size: 0.34375rem;
+	margin-top: 0.3125rem;
+	margin-bottom: 0.28125rem;
+	font-weight: bold;
+}
+.register{	
+	background: url(../image/logon.png) no-repeat;
+	width: 2.46875rem;
+	height: 0.90625rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 0.46875rem;
+	color: #e64f1a;
+	font-size: 0.34375rem;
+	font-weight: bold;
+}
+.headTop>img{
+	height: 0.625rem;
+	margin-right: 0.625rem;
+}
+/*店铺商品收藏部分*/
+.headBottom{
+	display: flex;
+	flex-grow: 1;
+}
+.headBottom>p{
+	display: flex;
+	flex-grow: 1;
+	height: 0.65625rem;
+	justify-content: center;
+	align-items: center;
+}
+.headBottom p:nth-of-type(1){
+	border-right: 2px solid #FFFFFF;
+}
+.headBottom p img{
+	width: 0.5625rem;
+	margin-right: 0.40625rem;
+}
+.headBottom p span{
+	color: #FFFFFF;
+	font-size: 0.34375rem;
+	text-align: center;
+}
+/*我的订单*/
+.myOrder>p{
+	background: #FFFFFF;
+	display: flex;
+	height: 1.5625rem;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 0.46875rem;
+	padding-right: 0.46875rem;
+	margin-bottom: 2px;
+}
+.myOrder>p span{
+	color: #333333;
+	font-size: 0.4375rem;
+}
+.myOrder>p a{
+	display: flex;
+	align-items: center;
+}
+.myOrder>p img{
+	height: 0.4375rem;
+}
+.viewOrder{
+	color: #999;
+}
+/*点单下方列表功能栏*/
+.myOrder ul{
+	display: flex;
+	align-items: center;
+	background: #FFFFFF;
+	height: 2.25rem;
+	margin-bottom: 0.3125rem;
+}
+.myOrder ul Li{
+	width: 25%;
+	display: flex;
+	justify-content: center;
+}
+.myOrder ul Li a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.myOrder ul Li img{
+	height: 0.875rem;
+}
+.mainfont{
+	color: #333333;
+	font-size: 0.375rem;
+}
+/*积分商城等。。功能区域*/
+.otherClazz{
+	margin-bottom: 0.9375rem;
+}
+.otherClazz ul{
+	background: #FFFFFF;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	
+}
+.otherClazz ul li{
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	height: 3.125rem;
+	border-bottom: 2px solid #E0E0E0;
+}
+.otherClazz ul li:nth-of-type(5){
+	border: none;
+}
+.otherClazz ul Li a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.otherClazz ul Li img{
+	margin-bottom: 0.3125rem;
+}
+.exit{
+	background: #FFFFFF;
+	height: 1.5625rem;
+	line-height: 1.5625rem;
+	text-align: center;
+	color: #333333;
+	font-size: 0.375rem;
+}
+

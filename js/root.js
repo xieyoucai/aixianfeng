@@ -1,0 +1,51 @@
+define(["jquery","underscore","backbone","text"],function($,_,backbone){
+	var w = backbone.Router.extend({
+		routes:{
+			"home":"home",
+			"superDistribution":"superDistribution",
+			"order":"order",
+			"mine":"mine",
+			"shoppingCar":"shoppingCar",
+			'*defAction':"defAction"
+		},
+		home:function(){
+			require(["text!../home/index.html"],function(tpl){
+				$(".switch").html(tpl);
+			});
+			
+		},
+		superDistribution:function(){
+			require(["text!../shandianpeisong/superDistribution.html"],function(tpl){
+				$(".switch").html(tpl);
+			});
+		},
+		order:function(){
+			require(["text!../order/order.html"],function(tpl){
+				$(".switch").html(tpl);
+			});
+		},
+		shoppingCar:function(){
+			require(["text!../shoppingCar/shoppingCar.html"],function(tpl){
+				$(".switch").html(tpl);
+			});
+		},
+		mine:function(){
+			require(["text!../mine/mine.html"],function(tpl){
+				$(".switch").html(tpl);
+			});
+		},
+		defAction:function(){
+			require(["text!../error/404.html"],function(tpl){
+				$('.switch').html(tpl);
+			})
+		},
+		initialize:function(){
+			window.location.hash = "home";
+		}
+	});
+	var router = new w();
+	router.on("route",function(a,b){
+		console.log(a,b);
+	});
+	backbone.history.start();
+})
