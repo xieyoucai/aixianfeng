@@ -9,6 +9,7 @@ define(["jquery","underscore","backbone","text"],function($,_,backbone){
 			'*defAction':"defAction"
 		},
 		home:function(){
+			console.log(1);
 			require(["text!../home/index.html","../home/home"],function(tpl,ctrl){
 				$(".switch").html(tpl);
 				ctrl.requst();
@@ -17,8 +18,9 @@ define(["jquery","underscore","backbone","text"],function($,_,backbone){
 			
 		},
 		superDistribution:function(){
-			require(["text!../shandianpeisong/superDistribution.html"],function(tpl){
+			require(["text!../shandianpeisong/superDistribution.html","../shandianpeisong/superDistribution"],function(tpl,ctrl){
 				$(".switch").html(tpl);
+				ctrl.clickTap();
 			});
 		},
 		order:function(){
@@ -28,8 +30,9 @@ define(["jquery","underscore","backbone","text"],function($,_,backbone){
 			});
 		},
 		shoppingCar:function(){
-			require(["text!../shoppingCar/shoppingCar.html"],function(tpl){
+			require(["text!../shoppingCar/shoppingCar.html"],function(tpl,ctrl){
 				$(".switch").html(tpl);
+//				ctrl.requst();
 			});
 		},
 		mine:function(){
