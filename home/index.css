@@ -56,6 +56,7 @@
 	right: 0;
 	overflow: auto;
 	bottom: 1.5625rem;
+	-webkit-overflow-scrolling: touch;
 	/*height: 12.75rem;*/
 }
 /*轮播图样式*/

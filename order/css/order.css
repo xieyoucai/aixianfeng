@@ -22,6 +22,7 @@ header h2 {
 	top: 1.40625rem;
 	bottom: 1.5625rem;
 	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 }
 .order_menu {
     border-top: 1px solid #a2a2a2;

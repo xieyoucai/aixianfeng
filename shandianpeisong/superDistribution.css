@@ -122,6 +122,7 @@
 }
 .rightBottom{
 	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 	position: absolute;
 	top: 1.25rem;
 	left: 2.5rem;
